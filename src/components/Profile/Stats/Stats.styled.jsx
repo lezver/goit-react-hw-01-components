@@ -12,13 +12,13 @@ export const StatsStyle = styled.ul`
     justify-content: center;
     align-items: center;
     padding: 24px 0;
-    background-color: rgba(141, 121, 121, 0.315);
+    background-color: rgba(125, 155, 179, 0.315);
     border: 1px solid rgb(128 128 128 / 25%);
   }
 `;
 export const Label = styled.span`
   margin-bottom: 10px;
-  color: rgba(128, 128, 128, 0.753);
+  color: var(--half-transparent);
 `;
 
 export const Quantity = styled.span`

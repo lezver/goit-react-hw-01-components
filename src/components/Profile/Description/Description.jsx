@@ -19,5 +19,10 @@ export const Description = ({ user: { avatar, location, tag, username } }) => {
 };
 
 Description.propTypes = {
-  user: PropTypes.object.isRequired,
+  user: PropTypes.shape({
+    avatar: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+  }),
 };

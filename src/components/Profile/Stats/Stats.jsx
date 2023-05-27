@@ -25,5 +25,11 @@ export const Stats = ({
 };
 
 Stats.propTypes = {
-  user: PropTypes.object.isRequired,
+  user: PropTypes.shape({
+    stats: PropTypes.shape({
+      followers: PropTypes.number.isRequired,
+      likes: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+    }),
+  }),
 };

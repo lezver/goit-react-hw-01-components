@@ -20,12 +20,12 @@ export const Name = styled.p`
 export const Tag = styled.p`
   margin: 0 auto 20px;
   width: fit-content;
-  color: rgba(128, 128, 128, 0.753);
+  color: var(--half-transparent);
   font-size: 18px;
 `;
 export const Location = styled.p`
   margin: 0 auto;
   width: fit-content;
-  color: rgba(128, 128, 128, 0.753);
+  color: var(--half-transparent);
   font-size: 18px;
 `;
