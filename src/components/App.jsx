@@ -1,3 +1,14 @@
+import user from '../user.json';
+import data from '../data.json';
+
+import { Profile } from './Profile/Profile';
+import { Statistics } from './Statistics/Statistics';
+
 export const App = () => {
-  return <h1>FAKING FAAAK</h1>;
+  return (
+    <>
+      <Profile user={user} />
+      <Statistics data={data} />
+    </>
+  );
 };
