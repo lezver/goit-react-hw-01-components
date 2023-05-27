@@ -8,7 +8,7 @@ export const Stats = ({ data }) => {
         return (
           <Item key={id}>
             <Label>{label}</Label>
-            <Percentage dataId={id}>{percentage}%</Percentage>
+            <Percentage dataLabel={label}>{percentage}%</Percentage>
           </Item>
         );
       })}

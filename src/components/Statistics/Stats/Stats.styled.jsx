@@ -1,20 +1,17 @@
 import styled from 'styled-components';
 
 const setBgColor = props => {
-  const id = props.children[1].props.dataId;
-  console.log(id);
+  const Label = props.children[1].props.dataLabel;
 
-  switch (id) {
-    case 'id-1':
+  switch (Label) {
+    case '.docx':
       return 'var(--half-blue)';
-    case 'id-2':
+    case '.mp3':
       return 'var(--half-red)';
-    case 'id-3':
+    case '.pdf':
       return 'var(--half-purple)';
-    case 'id-4':
+    case '.psd':
       return 'var(--half-green)';
-    case 'id-5':
-      return 'var(--half-orange)';
     default:
       return 'var(--half-transparent)';
   }
